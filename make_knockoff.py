@@ -45,7 +45,7 @@ for i in range(nsnp):
         X = np.hstack((geno[:,si:i],geno[:,(i+1):ei],knock[:,si:i]))
     X_train = X[::split_n,:]
     y_train = geno[::split_n,i]
-    for j in [1e5, 100, 1, 0.01]:
+    for j in [100, 1, 0.01]:
         multinom = LogisticRegression(C=j, solver='newton-cg',multi_class='multinomial')
         multinom.fit(X_train, y_train)
         if multinom.n_iter_ < 100:
