@@ -2,7 +2,7 @@
 
 ### Input file
 - PLINK raw file
-- Example: [QTL-MAS 2012](https://bmcproc.biomedcentral.com/articles/10.1186/1753-6561-8-S5-S1)
+- Example: `geno` ([QTL-MAS 2012](https://bmcproc.biomedcentral.com/articles/10.1186/1753-6561-8-S5-S1))
 - `plink --bfile geno --recode A --out geno`
 
 ### Python script
