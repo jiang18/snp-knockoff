@@ -15,8 +15,8 @@ python3 make_knockoff.py
 
 ### Output files
 - `extract.txt`: all the SNPs in `geno.txt`
-- `geno.txt` in which SNPs are ordered the same as in the input raw file.
-- `knockoff.t.txt` in which knockoffs are transposed and correspond to SNPs in geno.txt. This file can be easily converted to PLINK traw which can be further converted to PLINK bed/bim/fam by `plink2 --import-dosage`.
+- `geno.txt`: SNPs are ordered the same as in the input raw file.
+- `knockoff.t.txt`: Knockoffs are transposed and correspond to SNPs in geno.txt. This file can be easily converted to PLINK traw which can be further converted to PLINK bed/bim/fam by `plink2 --import-dosage`.
 
 ```sh
 plink --bfile geno --extract extract.txt --make-bed --out geno2
