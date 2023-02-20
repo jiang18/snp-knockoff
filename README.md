@@ -1,11 +1,11 @@
 # SNP knockoffs 
 
-### Input file
+## Input file
 - PLINK raw file
 - Example: `geno` ([QTL-MAS 2012](https://bmcproc.biomedcentral.com/articles/10.1186/1753-6561-8-S5-S1))
 - `plink --bfile geno --recode A --out geno`
 
-### Python script
+## Python script
 ```sh
 export OMP_NUM_THREADS=10
 python3 make_knockoff.py
@@ -13,7 +13,7 @@ python3 make_knockoff.py
 > **Note**
 > `split_n` and `ext` may require tuning.
 
-### Output files
+## Output files
 - `extract.txt`: all the SNPs in `geno.txt`
 - `geno.txt`: SNPs are ordered the same as in the input raw file.
 - `knockoff.t.txt`: Knockoffs are transposed and correspond to SNPs in geno.txt. This file can be easily converted to PLINK traw which can be further converted to PLINK bed/bim/fam by `plink2 --import-dosage`.
