@@ -1,7 +1,7 @@
 # SNP knockoffs 
 
 ## Input file
-- PLINK raw file
+- PLINK raw file is required.
 - Example: `geno` ([QTL-MAS 2012](https://bmcproc.biomedcentral.com/articles/10.1186/1753-6561-8-S5-S1))
 - `plink --bfile geno --recode A --out geno`
 
